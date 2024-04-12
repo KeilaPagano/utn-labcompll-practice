@@ -1,0 +1,244 @@
+<!--
+    TABLAS
+La etiqueta que define una tabla es <table>.
+Dentro de un elemento tabla en HTML vamos a encontrar
+otros elementos que permiten el maquetado de la misma. Los
+más comunes son:
+● <tr> - (table row). Representan las filas de una tabla
+● <td> - (table data). Son las celdas de la tabla. Ahí
+dentro se ubicará la información de la misma.
+● <th> - (table header). Son celdas que representan
+encabezados de tabla.
+La información se dispone en forma de celdas dentro de filas.
+La cantidad de celdas dentro de la fila define la cantidad de
+columnas que tendrá la tabla.
+
+Existen ciertas etiquetas que permiten el agrupado de
+contenido según su rol en una tabla.
+<thead> - (table head). Representa la sección superior
+(encabezado) de una tabla. Puede haber solo un
+elemento thead en una tabla.
+● <tbody> - (table body). Es el cuerpo de la tabla. Ahí
+dentro estarán los datos de la tabla. Pueden haber
+varios tbody en una tabla.
+● <tfoot> - (table foot). Pie de tabla. Se usa generalmente
+para expresar resultados, como por ejemplo total de
+una compra. Solo puede haber un solo tfoot dentro de
+una tabla.
+
+La etiqueta <caption> sirve para definir un título a la tabla.
+Debe ser declarada apenas se inicia la etiqueta de <table>
+
+    Colspan y Rowspan. Permiten unir una celda con las celdas
+contiguas, tanto horizontal como verticalmente.(concantenar) Sirven para
+<td> y para <th>
+● Colspan. Representa la cantidad de celdas unidas en
+horizontal.
+● Rowspan. Equivale a la cantidad de celdas unidas en
+vertical.
+
+FORMULARIOS
+Algunos elementos incluidos en los formularios son:
+● <form>: Es la etiqueta que engloba y declara el
+formulario. Funciona como contenedor y da directivas
+básicas sobre dónde y de qué forma debe enviar la
+información.
+● <input>: Representa un campo de entrada de un
+formulario. Puede tener diferentes tipos, de acuerdo a la
+información que se desea ingresar.
+● <label>: Se utiliza para etiquetar los campos de
+entrada, dándoles un nombre representativo para
+comprender qué información debe ingresarse en cada
+uno.
+● <button>: Sirve para definir un botón clickeable, que se
+utilizara para disparar acciones en el formulario.
+Un formulario consiste en un conjunto de elementos de
+entrada usados para recolectar datos que ingresa el
+usuario
+
+Action Method Target
+Action define la dirección a donde sera enviada la información de nuestro formulario. 
+Esta información será enviada cuando el usuario clickee el botón de tipo submit. 
+Si no es declarado, será enviado a la página actual.
+
+Method hace referencia al método HTTP a ser usado para enviar los datos del formulario.
+Puede ser GET o POST. El valor por defecto es GET
+
+Target es la definición de donde se mostrará la respuesta del envío de este formulario.
+El valor por defecto es _self. Otros valores posibles son: _blank, _self.
+
+El elemento <label> define una etiqueta para los elementos de un formulario.
+Provee la funcionalidad adicional de seleccionar el input al cual está conectado,
+mediante el click en el mismo.
+Es buena práctica incluir el atributo for y ubicar en su valor 
+el id del elemento al cual está etiquetando.
+
+Los atributos más comunes en un elemento <input> son:
+● type: define el tipo del input. Los mas comunes son text,
+password, number, submit, radio, checkbox.
+● value: expresa el valor inicial de un input.
+● required: especifica que el input es de solo lectura y no
+puede ser modificado.
+● disabled: de estar presente, declara que el input estará
+deshabilitado. Su valor no será enviado por el
+formulario.
+● readonly: especifica que el input es de solo lectura y no
+puede ser modificado. Su valor será enviado por el
+formulario.
+● placeholder: sirve de texto de ejemplo para inputs.
+● size: declara el tamaño en caracteres del input.
+● maxlength: declara la cantidad máxima de caracteres a
+ingresar.
+● autocomplete: aclara si es un campo autocompletado
+
+Cada elemento <input> debe incluir una etiqueta name para
+que este sea enviado a través del formulario.
+Si el atributo name es omitido, el valor del input no será
+enviado
+
+Hay varios tipos de inputs además de text. Estos son:
+● password: sirven para campos de claves, que no deben
+ser vistos.
+● number: sirve para campos numéricos.
+● checkbox: sirve para seleccionar varias opciones de
+check.
+● radio: sirve para elegir una opción entre varias.
+● date: sirve para campos de fecha. Al hacer click,
+muestra un selector de fecha en calendario.
+● button: define simplemente un botón, sin funcionalidad
+por defecto.
+● submit: define un botón, que incluye la funcionalidad de
+enviar los datos del formulario, con la información
+declarada en el tag de form.
+Cada tipo de input tiene atributos específicos, que dan detalle
+sobre cómo debería funcionar o qué limitaciones puede tener
+
+La etiqueta <select> define un componente de selección
+desplegable.
+Dentro de esta etiqueta, debemos ubicar otras llamadas
+etiquetas de opción, definidas por <option>, que
+representarán las opciones de selección la misma.
+Por defecto, el valor seleccionado es el de la primera
+opción. Para definir otra opción por defecto, debe agregarse
+el atributo selected al <option> deseado.
+
+Si se necesita agrupar elementos en un formulario, la
+etiqueta a usar es <fieldset>.
+Los elementos del formulario que estén dentro de la
+etiqueta fieldset, serán agrupados dentro de una caja con
+borde, que representara el agrupamiento de estos
+componentes.
+Se utiliza la etiqueta <legend> para agregar un título
+representativo al grupo.
+
+HTML - DIV
+El elemento <div></div> hace referencia a división y sirve
+para crear secciones o agrupar contenidos.
+Es un elemento de bloque lo que significa que por defecto
+este elemento ocupará todo el ancho de la pantalla.
+No tiene propiedades para alterar su comportamiento como
+tal, pero podremos agregarle las propiedades “comunes”,
+es decir, las propiedades “id”, “class” y “style”.
+Comúnmente son utilizadas como contenedores, es decir,
+para agrupar contenido.
+
+COMENTARIOS: No se visualizan en el navegador
+
+HTML - Elemento HEAD
+El elemento <head></head> debe ser el primer hijo de
+nuestro elemento <html></html>.
+Contiene metadata de nuestro documento, la cual no se
+visualizará en el navegador pero le indicará al mismo cómo
+configurar cuestiones generales de nuestra página.
+Al mismo tiempo, esta metadata se utiliza para indicarle a
+los motores de búsqueda el contenido de nuestro
+documento, establecer configuraciones de codificación de
+caracteres y visualización en diferentes dispositivos y
+agregar código CSS o JS a nuestro documento, entre otras
+
+Listado de elementos
+● El elemento <title> es obligatorio y define el título del
+documento.
+● El elemento <style> se usa para definir información
+de estilo para un solo documento (se coloca el
+código CSS directamente dentro de este elemento).
+● La etiqueta <link> se usa con mayor frecuencia para
+vincular a hojas de estilo externas
+● El elemento <meta> se utiliza normalmente para
+especificar el conjunto de caracteres, la descripción
+de la página, las palabras clave, el autor del
+documento y la configuración de la ventana gráfica.
+● El elemento <script> se utiliza para agregar JS a
+nuestro documento, pudiendo hacerlo directamente
+dentro del elemento o asociando a un archivo
+externo.
+● El elemento <base> especifica la URL base y / o el
+destino para todas las URL relativas en una página
+
+HTML5 - Validaciones de Formularios
+También se incorporan propiedades para los elementos de
+un formulario que nos permiten validar la información que
+ingresa el usuario, por ejemplo indicarle si un campo es
+requerido o la cantidad máxima de caracteres.
+Propiedades en cuestión:
+● required: Especifica si un campo de formulario
+debe completarse antes de que se pueda enviar el
+formulario.
+● minlength y maxlength: Especifican la longitud
+mínima y máxima de los datos de texto (cadenas).
+● min y max: Especifican los valores mínimo y
+máximo de los tipos de entrada numéricos.
+● type: Especifica si los datos deben ser un número,
+una dirección de correo electrónico o algún otro
+tipo de preajuste específico.
+● pattern: Especifica una expresión regular que
+define un patrón que los datos que se introduzcan
+deben seguir.
+IMPORTANTE: dado que el código HTML puede ser manipulado a
+través de la herramienta de debugger, las validaciones se deben
+realizar obligatoriamente desde el código JavaScript pudiéndose
+acompañar con las propiedades vistas en este slide o no.
+
+HTML - Inline Frame <iframe> - atributos
+    El elemento <iframe> admite una serie de atributos. Los
+descritos en el ejemplo son:
+● allow: política de características de funcionamiento y
+seguridad.
+● allowfullscreen: establece si el contenido puede
+mostrarse en pantalla completa.
+● height: altura en pixels.
+● width: ancho en pixels.
+● src: URL de la página a mostrar en el marco.
+● frameborder: dibuja un borde alrededor del marco.
+
+HTML5 - Otros nuevos elementos - <audio>
+La etiqueta <audio> es usada para agregar contenido en
+forma de sonido, como música u algun stream de audio.
+Contiene una o más etiquetas <source> que especifica las
+fuentes de audio para ese elemento. El navegador elegirá la
+primer fuente de audio que soporte.
+El texto dentro del tag de audio será solo mostrado en
+navegadores que no soporten esta funcionalidad.
+Hay tres formatos de audio soportados en HTML: MP3,
+WAV y OGG.
+HTML5 - Otros nuevos elementos - <picture>
+    La etiqueta <picture> le brinda al desarrollador una mayor
+flexibilidad a la hora de especificar recursos de imagen.
+Su uso más común es para diagramar un diseño
+responsivo. En lugar de tener una única imagen que tenga
+que ser redimensionada según la pantalla, múltiples
+imágenes pueden ser especificadas para manejar de mejor
+forma esta variación de pantallas y dispositivos.
+Se especifican múltiples elementos <source> y un
+elemento <img> contenido en él para proveer versiones de
+una imagen para los diferentes escenarios de dispositivos.
+
+La etiqueta <canvas> se puede utilizar para dibujar gráficos
+a través de secuencias de comandos (por lo general
+JavaScript).
+Solo tiene los atributos width y height y el resto de las
+especificaciones sobre los gráficos se agregan por
+Javascript.
+
+
+-->
