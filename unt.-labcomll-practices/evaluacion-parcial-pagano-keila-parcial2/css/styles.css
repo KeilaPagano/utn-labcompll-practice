@@ -1,0 +1,62 @@
+/*PARCIAL 2- KEILA PAGANO*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #00796b;
+}
+
+#cotizador {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: left;
+    width: 300px; 
+    position: relative; 
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#tipoReactor, #cantidad, #pais {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+#resultado {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}

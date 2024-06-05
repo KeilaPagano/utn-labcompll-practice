@@ -1,0 +1,41 @@
+<!--PARCIAL 2- KEILA PAGANO-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reactores Nucleares - Hermanos Macana S.A.</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <h1>Hermanos Macana S.A.</h1>
+    <h2>Reactores Nucleares</h2>
+
+    <div id="cotizador">
+        <label for="tipoReactor">Tipo de Reactor:</label>
+        <select id="tipoReactor">
+            <option value="PWR">PWR</option>
+            <option value="BWR">BWR</option>
+            <option value="PHWR">PHWR</option>
+            <option value="LWGR">LWGR</option>
+        </select>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" min="0" value="1" />
+
+        <label for="pais">País:</label>
+        <select id="pais">
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="Germany">Germany</option>
+            <option value="Japan">Japan</option>
+        </select>
+
+        <button id="calcularBtn">Calcular Costo</button>
+        <p id="resultado"> <!--Resultado o error--></p>
+    </div>
+</body>
+<script src="js/app.js" defer></script>
+</html>
